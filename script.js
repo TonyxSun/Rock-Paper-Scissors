@@ -115,8 +115,8 @@ function restart() {
 }
 
 intro()
-window.addEventListener('click', startgame);
-window.addEventListener('touchend', startgame);
+window.addEventListener('click touchend', startgame);
+// window.addEventListener('touchend', startgame);
 btns.forEach(btn => btn.addEventListener('click', playRound));
 retryBtn.addEventListener('click', restart);
 
