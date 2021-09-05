@@ -3,26 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
   </head>
   <body>
-    <div id="game-container">
-      <button class='game-option' id="rock">Rock</button>
-      <button class='game-option' id="paper">Paper</button>
-      <button class='game-option' id="scissors">Scissors</button>
-      <div class="results">
-        <hr />
-        <p id="round-results"></p>
-        <div id="scores">
-          <p id="player-score">Player: 0</p>
-          <p id="computer-score">Computer: 0</p>
+    <div id="container">
+      <p>
+        Your system has been taken over by EvilBot 3.14. The only way to salvage
+        your files and defeat the evil AI is to play a game even the mastermind
+        hasn't yet figured out...
+      </p>
+      <p id="click-continue" style="font-style: italic">
+        Click anywhere to continue
+      </p>
+      <div class="hidden" id="game-container">
+        <h2>Rock, Paper, Scissors</h2>
+        <p>Make your choice below - may luck be with you.</p>
+        <button class="game-option" id="rock">Rock</button>
+        <button class="game-option" id="paper">Paper</button>
+        <button class="game-option" id="scissors">Scissors</button>
+        <div class="results">
+          <hr />
+          <p id="round-results"></p>
+          <div id="scores">
+            <p id="player-score">Player: 0</p>
+            <p id="computer-score">Computer: 0</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="game-end" class="hidden">
+
+      <div id="end-container" class="hidden">
+        <hr>
         <p id="end-msg"></p>
-        <button id='retry-btn'> Restart </button>
+        <button id="retry-btn">Restart</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

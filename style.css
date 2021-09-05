@@ -1,0 +1,26 @@
+.hidden {
+    /* visibility: hidden; */
+    display: none;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex; 
+    /* justify-content: center; */
+    align-items: center; 
+/* experimental */
+    color:#ffffff;
+
+}
+
+#container {
+    border: solid white;
+    height: 60vh;
+    background-color: #404140;
+    margin: 5rem;
+    padding: 2rem;
+}
+
+.game-option:hover{
+    box-shadow: 0 0 4px rgb(238, 255, 0);
+}
+
