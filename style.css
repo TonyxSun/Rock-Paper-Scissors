@@ -14,12 +14,12 @@ body {
     height: 60vh;
     width: 60vw;
     max-width: 1000px;
-    background-color: #404140;
+    background-color: #303030;
     margin: 5rem;
     padding: 2rem;
 }
 
-.game-option:hover{
+.game-option:hover{ /* These are for the RPS options */
     box-shadow: 0 0 4px rgb(238, 255, 0);
 }
 

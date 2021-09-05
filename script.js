@@ -22,6 +22,7 @@ let text = `Your system has been taken over by EvilBot 3.14.
         is to play a game even the mastermind hasn't yet figured out...`;
 
 function intro() {
+    // intro with "typing" effect
     if (i < text.length) {
         document.getElementById('intro').innerHTML += text.charAt(i);
         i++;
@@ -37,6 +38,7 @@ function intro() {
 }
 
 function startgame() {
+    // loads the game interface
     if (introFinished == true) {
         introClick.classList.toggle('hidden');
         gameInterface.classList.toggle('hidden');
@@ -72,7 +74,7 @@ function playRound(e) {
 }
 
 let printRound = function (msg) {
-    // prints results of current round 
+    // prints results of current round and updates scores
     roundResults.innerHTML = `Round ${roundNumber}: You chose: ${playerSelection}. EvilBot chose: ${computerSelection}.<br> <strong>${msg}</strong>`;
     resultsDiv.insertBefore(roundResults, scoresDiv);
     playerResults.textContent = `Player: ${playerScore}`;
@@ -98,6 +100,7 @@ let printWinner = function () {
 
 
 function restart() {
+    // Resets game
     playerScore = 0;
     computerScore = 0;
     introFinished = false;
