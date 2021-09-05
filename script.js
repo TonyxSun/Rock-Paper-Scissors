@@ -42,7 +42,9 @@ function startgame() {
     if (introFinished == true) {
         introClick.classList.toggle('hidden');
         gameInterface.classList.toggle('hidden');
-        // window.removeEventListener('click', startgame);
+        window.removeEventListener('click', startgame);
+        window.removeEventListener('touchend', startgame);
+
     }
 }
 
@@ -113,8 +115,8 @@ function restart() {
 }
 
 intro()
-window.addEventListener('click', startgame, {once: true});
-window.addEventListener('touchend', startgame, {once: true});
+window.addEventListener('click', startgame);
+window.addEventListener('touchend', startgame);
 btns.forEach(btn => btn.addEventListener('click', playRound));
 retryBtn.addEventListener('click', restart);
 
