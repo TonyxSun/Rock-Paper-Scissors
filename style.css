@@ -1,5 +1,4 @@
 .hidden {
-    /* visibility: hidden; */
     display: none;
 }
 body {
@@ -7,14 +6,13 @@ body {
     display: flex; 
     /* justify-content: center; */
     align-items: center; 
-/* experimental */
     color:#ffffff;
-
 }
 
 #container {
     border: solid white;
     height: 60vh;
+    width: 60vw;
     background-color: #404140;
     margin: 5rem;
     padding: 2rem;
