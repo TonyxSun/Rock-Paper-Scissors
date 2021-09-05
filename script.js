@@ -87,7 +87,7 @@ let printWinner = function () {
     // prints winner
     let msg;
     if (playerScore > computerScore) {
-        msg = "You won! You have defeated EvilBot 3.14 and it has left you alone - HOORAY!!!\n";
+        msg = "You won! You have defeated EvilBot 3.14 and it left you alone - HOORAY!!!\n";
     } else {
         msg = "Sorry, you lost. You will find your hard drive filled with pictures of pies when you wake up tomorrow. Condolences.\n";
     }
